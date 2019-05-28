@@ -30,7 +30,7 @@ namespace VueCLICore
             // In production, the React files will be served from this directory
             services.AddSpaStaticFiles(configuration =>
             {
-                configuration.RootPath = "ClientApp/dist";
+                configuration.RootPath = "client_app/dist";
             });
         }
 
@@ -59,7 +59,7 @@ namespace VueCLICore
 
             app.UseSpa(spa =>
             {
-                spa.Options.SourcePath = "ClientApp";
+                spa.Options.SourcePath = "client_app";
 
                 if (env.IsDevelopment())
                 {
